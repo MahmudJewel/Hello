@@ -1,0 +1,984 @@
+/*
+'***********************   Jewel Mahmud   ***********************************'
+'***********************  CSE-13th,MBSTU  ***********************************'
+'*********************** Date: 14-08-2020 ***********************************'
+'************* Title: Making complete portfolio *****************************'
+*/
+
+@import "utilities.css";
+*{
+	padding: 0px;
+	margin: 0px;
+}
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	/*font-family: 'poppins' sans-serif;*/
+
+	/*font-family: 'Oswald', sans-serif;*/
+
+	font-family: 'Sansita Swashed', cursive;
+	color: white;
+	/*background: #e6e6e6 /*#ccffe6*/
+
+	/*background: #151515 url(../images/3.png) no-repeat center top;*/
+
+	background: #151515 url(../images/3.png); /*no-repeat center top;*/
+	background-repeat: repeat;
+	background-position: center ;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 100%;
+	min-height: auto;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Acme', sans-serif;
+	letter-spacing: 0.2rem;
+	line-height: 2;
+}
+
+/*================ Links =======================*/
+a,
+a:visited {
+  color: #000000;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+a:hover,
+a:focus,
+a:active {
+  color: #ff0077;
+  outline: 0;
+}
+
+
+/*================ Start Navigations ================*/
+.navigations{
+	width: 100%;
+	height: auto;
+	background: #006666;
+	opacity: 0.8;
+	position: fixed;
+	/*box-shadow: 2px 2px 12px #737373;*/
+}
+
+nav{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.nav_left{
+	display: flex;
+	align-items: center;
+	margin-left: 3rem;
+}
+
+.nav_left h3{
+	padding-left: 2px;
+	color: #339933;
+
+}
+
+.nav_right{
+	display: flex;
+	align-items: center;
+	margin-right: 3rem;
+}
+
+.nav_right div{
+	padding: 10px 10px;
+	
+}
+.nav_right div a{
+	/*font-family: "poppins-bold", sans-serif;*/
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	
+}
+
+.nav_right div a:hover{
+	color: #ff3385;
+	/*background-color: #00cc99;*/
+	transition: all .3s ease;
+}
+
+ .logo-link{
+	text-decoration: none;
+}
+
+/* >>>>>>>>>>> Restponsive <<<<<<<<<<<<<<*/
+@media only screen and (max-width: 1024px){
+	.nav_left h3{
+	padding-left: 1px;
+	font-size: 1rem;
+}
+.nav_left{
+	margin-left: 1.5rem;
+}
+
+.nav_right{
+	margin-right: 1.5rem;
+}
+}
+
+@media only screen and (max-width: 768px){}
+
+@media only screen and (max-width: 600px){}
+/*================ End Navigations ================*/
+
+
+
+/*================ Start Home ================*/
+#home{
+	/*background: url(../images/3.png); 
+	background-repeat: repeat;
+	background-position: center top;
+	background-size: cover;
+	background-attachment: fixed;*/
+	width: 100%;
+	height: auto;
+	min-height: auto;
+	border-radius: 0 0 50px 50px;
+	box-shadow: 2px 2px 12px #737373;
+	padding-top: 8rem;
+	padding-bottom: 5rem;
+
+
+}
+
+.left-right{
+	display: flex;
+	justify-content: center;
+}
+
+
+#home .left{
+	font-family: 'Acme', sans-serif;
+	text-align: center;
+	padding-top:5rem;
+}
+
+/*#home .left h6{
+	color:#006666;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	letter-spacing: 0.3rem;
+	line-height: 2;
+
+}*/
+
+#home .left h1{
+	color: aqua;
+	font-size: 4rem;
+	
+}
+
+#home .left p{
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	line-height: 2;
+}
+
+
+.social{
+	display: flex;
+	padding-left: 40%;
+	margin-top: 15rem;
+}
+
+.social a{
+	color: white;
+	padding: 1rem;
+	font-size: 2rem;
+}
+.social a:hover{
+	color: aqua;
+}
+
+/* >>>>>>>>>>> Responsive <<<<<<<<<<<<<<*/
+@media only screen and (max-width: 1024px){
+	.left-right{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	#home .left{
+	margin: 5rem 0 0 0;
+	text-align: center;
+}
+}
+@media only screen and (max-width: 768px){}
+@media only screen and (max-width: 600px){
+	#home .left h6{
+		font-size: 1rem;
+	}
+	#home .left h1{
+		font-size: 2rem;
+	}
+	#home .left p{
+		font-size: 1rem;
+	}
+}
+
+/*================ End Home ==================*/
+
+/*================ Start About ================*/
+#about{
+	/*width: 100%;
+	height: auto;
+	background: url(../images/3.png);
+	padding: 10rem 0;
+	margin-top: 0.5rem;
+	margin-bottom: 5rem;
+	border-radius: 50px;
+	box-shadow: 2px 2px 12px #737373;*/
+
+	/*background: #151515 url(../images/3.png);
+	background-repeat: repeat;
+	background-position: center top;
+	background-size: cover;
+	background-attachment: fixed;*/
+
+	width: 100%;
+	height: auto;
+	min-height: auto;
+	border-radius: 0 0 50px 50px;
+	box-shadow: 2px 2px 12px #737373;
+	padding-top: 8rem;
+	padding-bottom: 5rem;
+	margin-top: 0.5rem;
+	border-radius: 50px;
+	box-shadow: 2px 2px 12px #737373;*/
+
+	/*clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 85%, 0 95%);*/
+}
+
+.left-right1{
+	display: flex;
+	justify-content: center;
+	padding: 0 10%;
+}
+
+.intro_pic img{
+	height: 15rem;
+	width: 15rem;
+	border-radius: 50%;
+	border-style: dotted;
+	border-color: aqua;
+}
+.intro_pic{
+	margin-top: 3rem;
+	/*margin-left: 15%;*/
+}
+.intro{
+	padding-left: 3rem;
+}
+.intro h5{
+	font-family: 'Acme', sans-serif;
+	padding-left: 3rem;
+	color: #ff0077;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	letter-spacing: 0.2rem;
+	/*margin-left: 7rem;*/
+	line-height: 2;
+}
+
+.intro h1{
+	font-family: 'Acme', sans-serif;
+	font-size: 2.5rem;
+	color: white;
+}
+
+.intro p{
+	padding-top: 3rem;
+	font-size: 1.5rem;
+	line-height: 1.5;
+	margin-bottom: 2rem;
+	color: white;
+	padding-right: 4rem;
+}
+
+.intro ul li{
+	list-style: none;
+}
+
+.intro ul li strong{
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	font-family: "poppins-blod", sans-serif;
+	letter-spacing: 2;
+}
+
+.intro ul li span{
+	font-size: 1.8rem;
+	font-family: "poppins-bold", sans-serif;
+	color: #888888;
+}
+
+.left-right2{
+	margin-top: 5rem;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	display: flex;
+	height: auto;
+	margin-left: 5%;
+}
+
+.proficiency{
+	width: 45%;
+	padding-left: 5%;
+}
+.proficiency h3{
+	text-transform: uppercase;
+	font-size: 2rem;
+	font-family: "poppins-bold",sans-serif;
+	line-height: 2;
+}
+.proficiency ul li{
+	padding-top: 1rem;
+}
+.proficiency ul li span{
+	color: white;
+	font-size: 1.2rem;
+}
+.skill{
+	padding-left: 5%;
+}
+.skill h3{
+	text-transform: uppercase;
+	font-size: 2rem;
+	font-family: "poppins-bold",sans-serif;
+	line-height: 2;
+}
+
+.skill ul li{
+	font-size: 1.5rem;
+	padding-top: 1rem;
+}
+.skill ul li progress{
+	width: 25rem;
+}
+
+#about .btn-part ul{
+	list-style: none;
+	text-align: center;
+}
+#about .btn-part ul li{
+	display: inline-block;
+}
+#about .btn-part ul li a{
+	font-family: 'Acme', sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	margin: 1rem;
+	padding: 1rem 3rem;
+	font-size: 2rem;
+	border-radius: 20px;
+	background: #999966;
+	box-shadow: 1px 1px 10px #6666ff;
+	transition: 0.3s ease;
+}
+#about .btn-part ul li a:hover{
+	background: transparent;
+	border-style: solid;
+}
+/* >>>>>>>>>>> Restponsive <<<<<<<<<<<<<<*/
+@media only screen and (max-width: 1024px){
+	.left-right1{
+		flex-direction: column;
+		text-align: center;
+	}
+	.intro_pic{
+		margin-left: 0%;
+	}
+	.intro{
+	}
+	.intro h5{
+	padding-left: 0;
+	font-size: 1.2rem;
+	letter-spacing: 0.2rem;
+	margin-left: 0;
+}
+
+.intro h1{
+	font-size: 2.5rem;
+}
+.intro p{
+	padding-top: 1rem;
+	font-size: 1.5rem;
+	line-height: 1.5;
+	padding-right: 0rem;
+}
+.intro ul li{
+	text-align: left;
+	padding-left: 20%;
+}
+
+	.left-right2{
+		flex-direction: column;
+		align-items: center;
+		margin-top: 0rem;
+		padding-top: 5rem;
+	}
+
+	#about .btn-part ul li a{
+	padding: 1rem 2rem;
+	font-size: 1.8rem;
+}
+}
+@media only screen and (max-width: 768px){
+	.intro h1{
+	font-size: 1.5rem;
+}
+.intro ul li strong{
+	font-size: 1rem;
+}
+
+.intro ul li span{
+	font-size: 1.4rem;
+}
+.skill ul li progress{
+	width: 15rem;
+}
+}
+@media only screen and (max-width: 600px){
+	.intro_pic img{
+	height: 10rem;
+	width: 10rem;
+}
+.intro h1{
+	font-size: 1.1rem;
+}
+.intro ul li strong{
+	font-size: 0,8rem;
+}
+
+.intro ul li span{
+	font-size: 1.2rem;
+}
+.skill ul li progress{
+	width: 10rem;
+}
+
+.proficiency h3{
+	font-size: 1.2rem;
+	line-height: 2;
+}
+.skill h3{
+	margin-top: 1rem;
+	font-size: 1.2rem;
+}
+#about .btn-part ul li{
+	display: flex;
+	flex-direction: column;
+	margin:0 20%;
+}
+
+}
+
+/*================ End About ==================*/
+
+
+
+/*================ Start Experience ================*/
+#resume{
+	/*
+	width: 100%;
+	height: auto;
+	background: #a3a375;
+	padding: 10rem 0;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+	border-radius: 50px;
+	box-shadow: 2px 2px 12px #737373;*/
+
+	/*background: #151515 url(../images/3.png);
+	background-repeat: repeat;
+	background-position: center top;
+	background-size: cover;
+	background-attachment: fixed;*/
+
+	width: 100%;
+	height: 100%;
+	min-height: auto;
+	border-radius: 0 0 50px 50px;
+	box-shadow: 2px 2px 12px #737373;
+	padding-top: 8rem;
+	padding-bottom: 5rem;
+
+	margin-top: 0.5rem;
+	border-radius: 50px;
+	box-shadow: 2px 2px 12px #737373;
+}
+
+#resume .credential{
+	text-align: center;
+}
+#resume .head{
+	margin-top: 30px;
+	text-align: center;
+}
+#resume .inner{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+#resume .details{
+	position: relative;
+}
+
+#resume .details:before{     /* Column line*/
+	content: '';
+	width: 0.1px;
+	height: 100%;
+	background-color: red;
+	position: absolute;
+	left: 50%;
+}
+
+#resume .details .company{
+	margin: 30px;
+	position: relative;
+}
+#resume .details .company p{
+	margin-top: 10px;
+}
+#resume .details .company h3{
+	margin-top: 10px;
+}
+
+#resume .work .details .company:nth-child(odd){
+	padding-right: calc(50% + 50px);
+	text-align: right;
+}
+
+
+#resume .work .details .company:nth-child(even){
+	padding-left: calc(50% + 50px);
+}
+
+#resume .edu .details .company:nth-child(odd){
+	padding-right: calc(50% + 50px);
+	text-align: right;
+}
+
+#resume .edu .details .company:nth-child(even){
+	padding-left: calc(50% + 50px);
+}
+
+
+#resume .company .icon{
+	height: 40px;
+	width: 45px;
+	background-color: green;
+	text-align: center;
+	line-height: 40px;
+	position: absolute;
+	left: 48%;
+	border-radius: 30px;
+}
+
+#resume .company i{
+	font-size: 25px;
+}
+
+
+/*================ End Experience ==================*/
+
+/*================ Start My work ================*/
+#portfolio{
+	/*
+	height: auto;
+	width: 100%;
+	padding: 2rem 0;
+	background: #d9d9d9;
+	padding: 10rem 0;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+	border-radius: 50px;
+	box-shadow: 2px 2px 12px #737373;*/
+
+	/*background: #151515 url(../images/3.png);
+	background-repeat: repeat;
+	background-position: center top;
+	background-size: cover;
+	background-attachment: fixed;*/
+
+	width: 100%;
+	height: 100%;
+	min-height: auto;
+	border-radius: 0 0 50px 50px;
+	box-shadow: 2px 2px 12px #737373;
+	padding-top: 8rem;
+	padding-bottom: 5rem;
+
+	margin-top: 0.5rem;
+	border-radius: 50px;
+	box-shadow: 2px 2px 12px #737373;*/
+}
+
+#portfolio .top div{
+	padding: 0.5rem 0;
+
+}
+
+#portfolio .top div h3{
+	color: #ff0080;
+}
+
+#portfolio .projects{
+	margin:2rem 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#portfolio .projects .screenshot{
+	position: relative;
+}
+
+#portfolio .projects .screenshot .over{
+	position: absolute;
+	height: 90%;
+	width: 90%;
+	background: black;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	opacity: 0;
+	border-radius: 50px;
+	margin: 1rem 1rem;
+}
+
+#portfolio .projects .screenshot .over a{
+	text-decoration: none;
+	font-size: 3rem;
+	color: white;
+}
+
+#portfolio .projects .screenshot:hover .over{
+	opacity: .5;
+	transition: all 0.3s ease;
+}
+
+#portfolio img{
+	margin: 1rem 1rem;
+}
+
+#portfolio .projects img{
+	height: 300px;
+	width: 300px;
+	border-radius: 50px;
+	box-shadow: 2px 2px 12px #737373;
+}
+
+/*================ End My Work ==================*/
+
+
+/*================ Start Services ================*/
+#service{
+	/*height: auto;
+	width: 100%;
+	padding: 2rem 0;
+	background: #e6e6ff;
+	padding: 10rem 0;
+	margin-top: 0.5rem;
+	border-radius: 50px;
+	box-shadow: 2px 2px 12px #737373;*/
+
+	/*background: #151515 url(../images/3.png);
+	background-repeat: repeat;
+	background-position: center top;
+	background-size: cover;
+	background-attachment: fixed;*/
+
+	width: 100%;
+	height: 100%;
+	min-height: auto;
+	border-radius: 0 0 50px 50px;
+	box-shadow: 2px 2px 12px #737373;
+	padding-top: 8rem;
+	padding-bottom: 5rem;
+
+	margin-top: 0.5rem;
+	border-radius: 50px;
+	box-shadow: 2px 2px 12px #737373;
+
+}
+
+#service .top div{
+	padding: 0.5rem 0;
+}
+
+#service .top div h3{
+	color: #ff0080;
+}
+
+#service .down{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+#service .down .name{
+	margin: 0 2rem;
+	width: 200px;
+	border-radius: 35%;
+	border-style: solid;
+	border-width: 2px;
+	margin-top: 4rem;
+	color: black;
+	background: #bfbfbf;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	text-align: center;
+}
+
+#service .down .name .fa-connectdevelop{
+	font-size: 3rem;
+	padding-bottom: 2rem;
+}
+
+#service .down .name h3{
+	font-size: 1.5rem;
+}
+
+#service .down .name:hover{
+	color: #ff0080;
+	background-color: transparent;
+	transition: all .3s ease;
+}
+/*================ End Services ==================*/
+
+
+/*===================== Start  contact  =========================*/
+#contactid{
+	/*
+	height: auto;
+	width: 100%;
+	padding: 2rem 0;
+	background: #d9d9d9;
+	padding: 10rem 0;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+	border-radius: 50px;
+	box-shadow: 2px 2px 12px #737373;*/
+
+	/*background: #151515 url(../images/3.png);
+	background-repeat: repeat;
+	background-position: center top;
+	background-size: cover;
+	background-attachment: fixed;*/
+	
+	width: 100%;
+	height: 100%;
+	min-height: auto;
+	border-radius: 0 0 50px 50px;
+	box-shadow: 2px 2px 12px #737373;
+	padding-top: 8rem;
+	padding-bottom: 5rem;
+
+	margin-top: 0.5rem;
+	border-radius: 50px;
+	box-shadow: 2px 2px 12px #737373;
+}
+
+#contactid .top div{
+	padding: 0.5rem 0;
+}
+
+#contactid .top h3{
+	color: #ff0080;
+}
+
+#contactid .form div{
+	padding: 0.5rem 0;
+}
+
+#contactid .form .form-area input{
+	width: 40%;
+	height: auto;
+	border-radius: 0.8rem;
+	font-size: 1rem;
+	padding: 0.7rem 2rem;
+	box-shadow: 1px 1px 2px #737373;
+	background: #bfbfbf;
+}
+
+#contactid .form .form-area input:focus{
+	outline: none;
+	border-color: #ff0080;
+	background: white;
+}
+
+#contactid .form  textarea{
+	width: 40%;
+	height: 10rem;
+	border-radius: 1rem;
+	font-size: 1rem;
+	padding: 1rem 2rem;
+	box-shadow: 2px 2px 2px #737373;
+	background: #bfbfbf;
+
+}
+
+#contactid .form  textarea:focus{
+	outline: none;
+	border-color: #ff0080;
+	background:white;
+}
+
+#contactid .form button{
+	width: 45%;
+	height: auto;
+	border-radius: 0.8rem;
+	font-size: 1.5rem;
+	padding: 0.7rem 2rem;
+	box-shadow: 2px 2px 12px #737373;
+	background: transparent;
+	color: white;
+	border-color: white;
+}
+
+#contactid .form button:focus{
+	outline: none;
+}
+
+#contactid .form button:hover{
+	outline: none;
+	background:white;
+	color: #ff0080; 
+	transition: all 0.3s ease;
+	border-color: #ff0080;
+}
+
+
+
+/*===================== End  contact   =========================*/
+
+
+
+/*===================== Start  footer  =========================*/
+
+.footer{
+	width: 100%;
+	height: auto;
+	margin-top: 80px;
+	margin-bottom: 80px;
+	background: transparent;
+	position: relative;
+}
+
+.copy-right{
+	text-align: left;
+	padding-left: 200px;
+	padding-top: 30px;
+}
+.f-social{
+	text-align: right;
+	padding-right: 200px;
+	padding-top: 30px;
+}
+.f-social ul li{
+	display: inline-block;
+	font-size: 20px;
+	padding: 10px;
+	
+}
+
+.f-social ul li a:hover{
+	color: red;
+	transition: 0.3s ease;
+}
+
+.up{
+	width: 4rem;
+	height: 4rem;
+	background-color: #eee;
+	bottom: 2rem;
+	right: 2rem;
+	border-radius: 100%;
+	display: flex;
+	animation: pulse 2s infinite; 
+	cursor: pointer;
+	position: fixed;
+	opacity: 60%;
+
+
+}
+
+.up i{
+	color: #16162d;
+	font-size: 2rem;
+	margin: auto;
+}
+
+/*up animation*/
+@keyframes pulse{
+	0%{
+		box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
+	}
+	70%{
+		box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0);
+	}
+	100%{
+		box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);
+	}
+}
+
+/*===================== End  footer   =========================*/
+
+
+
+
+/* Demo tag */
+/* >>>>>>>>>>> Restponsive <<<<<<<<<<<<<<*/
+@media only screen and (max-width: 1024px){}
+@media only screen and (max-width: 768px){}
+@media only screen and (max-width: 600px){}
+
+/*================ Start Navigation ================*/
+/*================ End Navigation ==================*/
+
+
+
+
+/*================ Start Home ================*/
+/*================ End Home ==================*/
+
+
+/*================ Start About ================*/
+/*================ End About ==================*/
+
+
+/*================ Start Experience ================*/
+/*================ End Experience ==================*/
+
+/*================ Start My work ================*/
+/*================ End My Work ==================*/
+
+/*================ Start Services ================*/
+/*================ End Services ==================*/
+
+/*================ Start Contact ================*/
+/*================ End Contact ==================*/
+
+/*================ Start Navigation ================*/
+/*================ End Navigation ==================*/
